@@ -11,7 +11,7 @@ class SingleGridViewItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(5),
       margin: EdgeInsets.all(15),
-      decoration: BoxDecoration( color: Colors.white70,
+      decoration: BoxDecoration( color: Colors.white,
       borderRadius: BorderRadius.circular(15.0),
       ),
       child: InkWell(

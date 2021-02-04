@@ -23,49 +23,49 @@ class _GridViewItemsState extends State<GridViewItems> {
       children: <Widget>[
         SingleGridViewItem(
           name: 'Lessons',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/lessons.png',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => Lessons())),
         ),
         SingleGridViewItem(
           name: 'PDF',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/pdf.png',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => Pdf())),
         ),
         SingleGridViewItem(
           name: 'Live',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/live.webp',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => Live())),
         ),
         SingleGridViewItem(
           name: 'Exams',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/exams.png',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => Exams())),
         ),
         SingleGridViewItem(
           name: 'Homework',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/homework.png',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => HomeWork())),
         ),
         SingleGridViewItem(
           name: 'Student Reports',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/reports.png',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => StudentReports())),
         ),
         SingleGridViewItem(
           name: 'Ask Teacher',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/teacher.png',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => AskTeacher())),
         ),
         SingleGridViewItem(
           name: 'Contact US',
-          pictureName: 'images/LinuxLogo.png',
+          pictureName: 'images/contact.jpg',
           onTaped: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => Contacts())),
         ),
