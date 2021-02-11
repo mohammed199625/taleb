@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taleb/widgets/contact_item.dart';
 import 'package:taleb/widgets/my_appbar.dart';
 import 'package:taleb/widgets/drawer.dart';
 import 'package:taleb/functions/custom_launcher.dart';
@@ -22,19 +23,15 @@ class AskTeacher extends StatelessWidget {
              child: Column(
                mainAxisAlignment: MainAxisAlignment.center,
                children: <Widget>[
-                 SizedBox(height: 50,),
-                 RaisedButton(onPressed: () {
-                   customLauncher(
-                       "tel:+20 100 620 6913");
-                 },
-                   child: Text('Call'),
+                 CircleAvatar(
+                   radius: 60,
+                   child: Center(child: Image.asset('images/teacher.png',height: 80,width: 80,)),
+                   backgroundColor: Colors.white,
                  ),
                  Divider(),
-                 RaisedButton(onPressed: () {
-                   customLauncher('whatsapp://send?phone=+20 100 620 9613');
-                 },
-                   child: Text('Open Whatsapp'),
-                 ),
+                 ContactItem(photo:'images/call.png' ,text:'tel:+20 100 620 6913' ,onTaped:()=>customLauncher("tel:+20 100 620 6913") ,),
+                 ContactItem(photo:'images/whatsapp.png' ,text:'Whats:+20 100 620 6913' ,onTaped:()=>customLauncher('whatsapp://send?phone=+20 100 620 9613') ,),
+
                ],
              ),
            ) ,
