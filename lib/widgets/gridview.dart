@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:taleb/functions/custom_launcher.dart';
 import 'package:taleb/screens/ask_teacher.dart';
 import 'package:taleb/screens/contact.dart';
 import 'package:taleb/screens/exams.dart';
-import 'package:taleb/screens/home_work.dart';
 import 'package:taleb/screens/lessons.dart';
 import 'package:taleb/screens/live.dart';
 import 'package:taleb/screens/student_reports.dart';
@@ -48,8 +48,7 @@ class _GridViewItemsState extends State<GridViewItems> {
         SingleGridViewItem(
           name: 'Homework',
           pictureName: 'images/homework.png',
-          onTaped: () => Navigator.push(
-              context, MaterialPageRoute(builder: (context) => HomeWork())),
+          onTaped: () => customLauncher('whatsapp://send?phone=+20 100 620 9613'),
         ),
         SingleGridViewItem(
           name: 'Student Reports',

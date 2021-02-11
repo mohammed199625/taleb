@@ -1,17 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:taleb/widgets/my_appbar.dart';
 import 'package:taleb/widgets/drawer.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:taleb/functions/custom_launcher.dart';
 class AskTeacher extends StatelessWidget {
 
-
-  void customLauncher (command) async {
-    if (await canLaunch(command)){
-      await launch(command);
-    }else{
-      print('cannot launch $command');
-    }
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +20,7 @@ class AskTeacher extends StatelessWidget {
           ),
            child:Center(
              child: Column(
-
+               mainAxisAlignment: MainAxisAlignment.center,
                children: <Widget>[
                  SizedBox(height: 50,),
                  RaisedButton(onPressed: () {
