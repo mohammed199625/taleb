@@ -17,11 +17,11 @@ class SingleGridViewItem extends StatelessWidget {
       child: InkWell(
         onTap: onTaped,
         child: Column(
-mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Image.asset(
               pictureName,
-              height: 120,
+              height: 90,
               // fit: BoxFit.cover,
             ),
             Container(
@@ -29,6 +29,7 @@ mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 child: Center(
                     child: Text(
               name,
+              textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
